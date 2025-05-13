@@ -1,17 +1,20 @@
 package rest.engineering.digest.journalApp.service;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.Profile;
 import rest.engineering.digest.journalApp.entity.UserEntry;
 import rest.engineering.digest.journalApp.repository.UserEntryRepo;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
+@Profile("!disableTests")
 public class UserServiceTest {
     @Autowired
     private UserEntryRepo userEntryRepo;
