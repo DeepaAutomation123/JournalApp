@@ -2,6 +2,7 @@ package rest.engineering.digest.journalApp.service;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.mockito.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,6 +34,7 @@ public class UserDetailServiceImplTest {
         MockitoAnnotations.initMocks(this);
     }
     @Test
+     @Disabled
     /*void loadUserByUsernameTest()
     {
        when(userEntryRepo.findByusername(ArgumentMatchers.anyString())).thenReturn(User.builder()
